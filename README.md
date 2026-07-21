@@ -90,7 +90,7 @@ The full API key may also be passed to `generate_receipt` or `get_balance`. Stor
 - Receipt generation costs **US$0.10 per successful PDF**.
 - Failed generation is not charged.
 - Introductory credit is intended for evaluation and is limited by anti-abuse controls.
-- Paid credit and keys can be managed in the [AskAIs developer console](https://askais.com/en/developers).
+- Learn more on the dedicated [AskAIs MCP page](https://askais.com/en/mcp). Paid credit and keys can be managed in the [developer console](https://askais.com/en/developers).
 
 ## Acceptable use
 

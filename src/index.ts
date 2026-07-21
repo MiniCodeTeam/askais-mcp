@@ -100,7 +100,7 @@ app.get('/mcp', async (req: Request, res: Response) => {
     // session yet. Send them to the human-readable setup documentation while
     // preserving the protocol error for non-browser clients.
     if ((header(req, 'accept') || '').includes('text/html')) {
-      res.redirect(302, 'https://askais.com/en/developers')
+      res.redirect(302, 'https://askais.com/en/mcp')
       return
     }
     res.status(400).send('Missing or invalid MCP session ID.')

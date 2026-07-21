@@ -3,8 +3,8 @@
   "name": "io.github.MiniCodeTeam/askais-mcp",
   "title": "AskAIs AI Receipt Generator",
   "description": "Generate professional receipt PDFs and structured receipt data with AI-ready MCP tools.",
-  "version": "1.0.0",
-  "websiteUrl": "https://askais.com/en/developers",
+  "version": "1.0.1",
+  "websiteUrl": "https://askais.com/en/mcp",
   "repository": {
     "url": "https://github.com/MiniCodeTeam/askais-mcp",
     "source": "github"

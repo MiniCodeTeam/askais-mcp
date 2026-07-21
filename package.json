@@ -1,6 +1,6 @@
 {
   "name": "askais-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Remote MCP server for the AskAIs AI Receipt Generator API",
   "type": "module",
   "main": "dist/index.js",
@@ -41,7 +41,7 @@
     "type": "git",
     "url": "https://github.com/MiniCodeTeam/askais-mcp.git"
   },
-  "homepage": "https://askais.com/en/developers",
+  "homepage": "https://askais.com/en/mcp",
   "bugs": {
     "url": "https://github.com/MiniCodeTeam/askais-mcp/issues"
   },
