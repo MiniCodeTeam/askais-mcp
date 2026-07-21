@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.minicodeteam/askais-mcp",
+  "title": "AskAIs AI Receipt Generator",
+  "description": "Generate professional receipt PDFs and structured receipt data with AI-ready MCP tools.",
+  "version": "1.0.0",
+  "websiteUrl": "https://askais.com/en/developers",
+  "repository": {
+    "url": "https://github.com/MiniCodeTeam/askais-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://askais.com/mcp"
+    }
+  ]
+}
