@@ -137,4 +137,4 @@ npm run build
 Security reports: `security@askais.com`  
 Support: `support@askais.com`
 
-<!-- mcp-name: io.github.minicodeteam/askais-mcp -->
+<!-- mcp-name: io.github.MiniCodeTeam/askais-mcp -->
