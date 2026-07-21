@@ -8,6 +8,7 @@ test('loadConfig applies safe defaults', () => {
   assert.equal(config.port, 3105)
   assert.equal(config.apiBase, 'https://api.askais.com')
   assert.equal(config.publicMcpUrl, 'https://askais.com/mcp')
+  assert.ok(config.allowedHosts.includes('askais.com'))
 })
 
 test('loadConfig normalizes API base and invalid port', () => {

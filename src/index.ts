@@ -8,7 +8,7 @@ import { loadConfig } from './config.js'
 import { createAskAIsMcpServer, type RequestContext } from './mcp-server.js'
 
 const config = loadConfig()
-const app = createMcpExpressApp({ host: config.host })
+const app = createMcpExpressApp({ host: config.host, allowedHosts: config.allowedHosts })
 
 interface McpSession {
   transport: StreamableHTTPServerTransport

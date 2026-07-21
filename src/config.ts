@@ -4,6 +4,7 @@ export interface AppConfig {
   publicMcpUrl: string
   apiBase: string
   gatewaySecret?: string
+  allowedHosts: string[]
 }
 
 function readPort(value: string | undefined): number {
@@ -18,5 +19,9 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
     publicMcpUrl: env.PUBLIC_MCP_URL || 'https://askais.com/mcp',
     apiBase: (env.ASKAIS_API_BASE || 'https://api.askais.com').replace(/\/$/, ''),
     gatewaySecret: env.ASKAIS_MCP_GATEWAY_SECRET || undefined,
+    allowedHosts: (env.ALLOWED_HOSTS || 'askais.com,www.askais.com,localhost,127.0.0.1,askais-mcp')
+      .split(',')
+      .map((host) => host.trim())
+      .filter(Boolean),
   }
 }
