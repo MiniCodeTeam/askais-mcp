@@ -120,7 +120,11 @@ export class AskAIsClient {
       },
       body: JSON.stringify(input),
     })
-    return assertOk(response)
+    const result = await assertOk(response) as ReceiptResult
+    if (result.url?.startsWith('/')) {
+      result.url = `${this.config.publicApiBase}${result.url}`
+    }
+    return result
   }
 
   async getBalance(apiKey: string): Promise<{ balance_cents: number; currency: string }> {
